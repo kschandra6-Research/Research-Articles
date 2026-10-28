@@ -53,56 +53,6 @@ This repository archives eight (8) landmark peer-reviewed research papers publis
 
 ---
 
-## 🚀 How to Run Locally
-
-### Option A: 1-Click Launch (Windows)
-Double-click `run_server.bat` in this folder. It will start the lightweight server and automatically launch your browser at `http://localhost:8000`.
-
-### Option B: Python Command Line
-```powershell
-# Navigate to the project directory
-cd "C:\Users\DuDu-PC\.gemini\antigravity\scratch\academic-articles-dashboard"
-
-# Start the server (default port 8000)
-python server.py
-```
-To run without automatically launching the browser, pass `--no-browser`:
-```powershell
-python server.py --no-browser
-```
-
----
-
-## 🌐 Web Hosting Guide
-
-The dashboard is engineered with zero heavy dependencies (vanilla JavaScript, modern CSS3, and Tailwind CSS CDN), making it 100% portable for any static or dynamic web hosting platform:
-
-### 1. GitHub Pages (Free & Instant)
-1. Initialize a Git repository in this folder:
-   ```powershell
-   git init
-   git add .
-   git commit -m "Initial commit of K.S. Chandra Academic Archive"
-   ```
-2. Create a new repository on [GitHub](https://github.com) (e.g. `ks-chandra-archive`).
-3. Push your code:
-   ```powershell
-   git remote add origin https://github.com/<your-username>/ks-chandra-archive.git
-   git branch -M main
-   git push -u origin main
-   ```
-4. In GitHub repository **Settings** → **Pages**, select branch `main` and folder `/ (root)`. Click **Save**.
-5. Your dashboard will be live at `https://<your-username>.github.io/ks-chandra-archive/`!
-
-### 2. Netlify / Vercel
-- **Netlify**: Drag and drop the `academic-articles-dashboard` folder directly onto [Netlify Drop](https://app.netlify.com/drop).
-- **Vercel**: Run `vercel` in this directory or connect your GitHub repository.
-
-### 3. Linux / VPS / Cloud Server (Nginx / Apache)
-Place the files into `/var/www/html/` or your webroot, and enable byte-range requests for smooth PDF streaming.
-
----
-
 ## 📜 Academic Citations (Official Source Document)
 
 1. **Brick structures from Eastern Vidarbha during 5th to 8th Century CE**:
