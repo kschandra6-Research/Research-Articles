@@ -1,0 +1,198 @@
+/* K.S. Chandra Research Archive - Professional Academic Dashboard Styles */
+/* Created and Hosted by K.S.Chandra 2026. */
+
+:root {
+  --primary-navy: #0f172a;
+  --secondary-navy: #1e293b;
+  --accent-gold: #c2882a;
+  --accent-gold-light: #df9e38;
+  --accent-gold-dark: #966418;
+  --parchment-bg: #f8fafc;
+  --card-bg: #ffffff;
+  --text-primary: #1e293b;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --success-green: #059669;
+  --warning-amber: #d97706;
+  --danger-rose: #e11d48;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--parchment-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+/* Academic Serif for Headings */
+h1, h2, h3, .academic-serif {
+  font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* Header Gradient */
+.header-hero {
+  background: linear-gradient(135deg, #0b1329 0%, #172554 60%, #1e1b4b 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.header-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: radial-gradient(rgba(217, 160, 56, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+/* Gold Accent Line */
+.gold-line {
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #d97706, #f59e0b, #d97706, transparent);
+}
+
+/* Card Styling with Subtle Depth */
+.article-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+.article-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  border-color: #cbd5e1;
+}
+
+.card-thumbnail-wrapper {
+  position: relative;
+  overflow: hidden;
+  background: #f1f5f9;
+  height: 220px;
+}
+
+.card-thumbnail-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.article-card:hover .card-thumbnail-wrapper img {
+  transform: scale(1.04);
+}
+
+/* Category Badges */
+.badge-category {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-architecture { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.badge-iconography { background-color: #fce7f3; color: #9d174d; border: 1px solid #fbcfe8; }
+.badge-iron-age { background-color: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+.badge-trade-culture { background-color: #ccfbf1; color: #115e59; border: 1px solid #99f6e4; }
+.badge-archaeoastronomy { background-color: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; }
+.badge-conservation { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+.badge-prehistory { background-color: #ffedd5; color: #9a3412; border: 1px solid #fed7aa; }
+
+/* Filter Buttons */
+.filter-btn {
+  transition: all 0.2s ease;
+}
+
+.filter-btn.active {
+  background-color: #1e293b;
+  color: #ffffff;
+  border-color: #1e293b;
+  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.15);
+}
+
+/* Modals - Defensively hidden by default */
+.modal-overlay {
+  display: none !important;
+  background-color: rgba(15, 23, 42, 0.8) !important;
+  backdrop-filter: blur(4px);
+}
+
+.modal-overlay.open {
+  display: flex !important;
+}
+
+.modal-content-box {
+  animation: modalPopIn 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Session Status Banner */
+.session-status-banner {
+  border-left: 4px solid #3b82f6;
+  background: #eff6ff;
+  transition: all 0.3s ease;
+}
+
+.session-status-banner.download-used {
+  border-left-color: #d97706;
+  background: #fffbeb;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Citation Code Block */
+.citation-box {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-left: 3px solid #c2882a;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Print Optimization */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+    color: #000000;
+  }
+}
