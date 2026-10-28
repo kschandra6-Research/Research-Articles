@@ -34,8 +34,103 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Custom CSS Link -->
   <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Inlined Critical CSS for bulletproof hosting and instant modal hiding -->
+  <style>
+    :root {
+      --primary-navy: #0f172a;
+      --secondary-navy: #1e293b;
+      --accent-gold: #c2882a;
+      --parchment-bg: #f8fafc;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+    h1, h2, h3, .academic-serif {
+      font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+      letter-spacing: -0.01em;
+    }
+    .header-hero {
+      background: linear-gradient(135deg, #0b1329 0%, #172554 60%, #1e1b4b 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .gold-line {
+      height: 3px;
+      background: linear-gradient(90deg, transparent, #d97706, #f59e0b, #d97706, transparent);
+    }
+    .article-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    }
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      border-color: #cbd5e1;
+    }
+    .card-thumbnail-wrapper {
+      position: relative;
+      overflow: hidden;
+      background: #f1f5f9;
+      height: 220px;
+    }
+    .card-thumbnail-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: transform 0.4s ease;
+    }
+    .badge-category {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .badge-architecture { background-color: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+    .badge-iconography { background-color: #fce7f3; color: #9d174d; border: 1px solid #fbcfe8; }
+    .badge-iron-age { background-color: #e0e7ff; color: #3730a3; border: 1px solid #c7d2fe; }
+    .badge-trade-culture { background-color: #ccfbf1; color: #115e59; border: 1px solid #99f6e4; }
+    .badge-archaeoastronomy { background-color: #ede9fe; color: #5b21b6; border: 1px solid #ddd6fe; }
+    .badge-conservation { background-color: #dcfce7; color: #166534; border: 1px solid #bbf7d0; }
+    .badge-prehistory { background-color: #ffedd5; color: #9a3412; border: 1px solid #fed7aa; }
+
+    /* GUARANTEED MODAL HIDING (Never visible on initial load) */
+    .modal-overlay,
+    #reader-modal,
+    #citation-modal,
+    #session-limit-modal {
+      display: none !important;
+      background-color: rgba(15, 23, 42, 0.8) !important;
+      backdrop-filter: blur(4px);
+    }
+    .modal-overlay.open {
+      display: flex !important;
+    }
+    .session-status-banner {
+      border-left: 4px solid #3b82f6;
+      background: #eff6ff;
+    }
+    .session-status-banner.download-used {
+      border-left-color: #d97706;
+      background: #fffbeb;
+    }
+  </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-amber-100 selection:text-amber-900">
 
@@ -424,10 +519,10 @@
     </div>
   </footer>
 
-  <!-- ==================== MODALS ==================== -->
+  <!-- ==================== MODALS (Guaranteed Hidden By Default) ==================== -->
 
   <!-- 1. FULLSCREEN PDF READER MODAL -->
-  <div id="reader-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4">
+  <div id="reader-modal" class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center p-2 sm:p-4" style="display: none !important;" onclick="if(event.target === this) closeModal('reader-modal')">
     <div class="modal-content-box bg-white w-full h-[96vh] max-w-7xl rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-300">
 
       <!-- Reader Top Toolbar -->
@@ -508,7 +603,7 @@
   </div>
 
   <!-- 2. CITATION & AGREEMENT MODAL -->
-  <div id="citation-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4">
+  <div id="citation-modal" class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-4" style="display: none !important;" onclick="if(event.target === this) closeModal('citation-modal')">
     <div class="modal-content-box bg-white w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden border border-slate-200 flex flex-col">
 
       <!-- Modal Header -->
@@ -607,17 +702,22 @@
     </div>
   </div>
 
-  <!-- 3. SESSION LIMIT EXCEEDED MODAL -->
-  <div id="session-limit-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+  <!-- 3. SESSION LIMIT EXCEEDED MODAL (Guaranteed Hidden By Default) -->
+  <div id="session-limit-modal" class="modal-overlay fixed inset-0 z-50 hidden items-center justify-center p-4" style="display: none !important;" onclick="if(event.target === this) closeModal('session-limit-modal')">
     <div class="modal-content-box bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
-      <div class="bg-amber-700 text-white p-5 flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-full bg-amber-800 flex items-center justify-center shrink-0">
-          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+      <div class="bg-amber-700 text-white p-5 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-full bg-amber-800 flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-base font-bold">Session Download Limit Reached</h3>
+            <p class="text-xs text-amber-200">Repository Policy: One Article Per Session</p>
+          </div>
         </div>
-        <div>
-          <h3 class="text-base font-bold">Session Download Limit Reached</h3>
-          <p class="text-xs text-amber-200">Repository Policy: One Article Per Session</p>
-        </div>
+        <button onclick="closeModal('session-limit-modal')" class="text-amber-200 hover:text-white p-1 rounded-lg hover:bg-amber-800 transition" title="Close">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
       </div>
 
       <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-700">
