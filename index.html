@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K.S. Chandra Research Archive | Published Archaeological Articles</title>
+  <meta name="description" content="Interactive academic repository of published research papers in Indian Archaeology, Art History, Megalithic Material Culture, Ancient Architecture, and Archaeoastronomy by K.S. Chandra.">
+  <meta name="author" content="K.S. Chandra">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              800: '#1e293b',
+              900: '#0f172a',
+              950: '#090d16',
+            },
+            amber: {
+              650: '#c2882a',
+              750: '#a16207',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & Cinzel for scholarly aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- TOP ANNOUNCEMENT & CREDIT BAR -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center space-x-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span class="font-medium text-slate-200">Open Access Academic Repository</span>
+        <span class="text-slate-500">•</span>
+        <span class="text-slate-400">Peer-Reviewed Research Papers</span>
+      </div>
+      <div class="flex items-center space-x-3 text-amber-400 font-semibold tracking-wide">
+        <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd"></path></svg>
+        <span>Created and Hosted by K.S.Chandra 2026.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Brand / Identity -->
+        <a href="#" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-slate-900 to-amber-900 flex items-center justify-center text-amber-300 font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+            KC
+          </div>
+          <div>
+            <span class="text-lg font-bold text-slate-900 academic-serif block leading-tight group-hover:text-amber-800 transition-colors">
+              K.S. Chandra Archive
+            </span>
+            <span class="text-[11px] text-slate-500 block leading-tight font-medium">
+              Archaeological Research & Publications
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+          <a href="#articles-section" class="hover:text-amber-800 transition-colors">Research Articles</a>
+          <a href="#citations-section" class="hover:text-amber-800 transition-colors">Citations Guide</a>
+          <a href="#author-section" class="hover:text-amber-800 transition-colors">About Author</a>
+          <a href="#policy-section" class="hover:text-amber-800 transition-colors">Download Policy</a>
+        </nav>
+
+        <!-- Quick Action / Status Indicator -->
+        <div class="flex items-center space-x-3">
+          <a href="#articles-section" class="inline-flex items-center px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-semibold shadow-sm transition">
+            <svg class="w-4 h-4 mr-1.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            Explore 8 Papers
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="header-hero text-white py-14 px-4 sm:px-6 lg:px-8 border-b border-amber-900/30">
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs font-semibold mb-4 tracking-wide">
+          <svg class="w-3.5 h-3.5 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <span>Department of Ancient Indian History, Culture & Archaeology • RTM Nagpur University</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold academic-serif text-white tracking-tight leading-tight mb-4">
+          Scholarly Research Archive & Published Articles
+        </h1>
+
+        <p class="text-base sm:text-lg text-slate-300 font-light leading-relaxed mb-6">
+          An interactive academic repository presenting 8 peer-reviewed research papers in
+          Indian Archaeology, Megalithic Material Culture, Vakataka Architecture, Ancient Iconography, and Archaeoastronomy.
+          Read each paper online in full resolution or download with citation agreement.
+        </p>
+
+        <!-- Credit Badge -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <div class="inline-flex items-center space-x-2 bg-slate-900/80 border border-slate-700/80 px-4 py-2 rounded-xl text-xs text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+            <span>Attribution:</span>
+            <strong class="text-amber-300 font-medium">Created and Hosted by K.S.Chandra 2026.</strong>
+          </div>
+          <a href="#citations-section" class="text-xs text-amber-400 hover:text-amber-300 underline font-medium flex items-center space-x-1">
+            <span>View Academic Citations</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- METRIC COUNTERS BAR -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-10 pt-8 border-t border-slate-800">
+        <div class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 academic-serif" id="stat-total-articles">8</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Published Papers</div>
+        </div>
+        <div class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 academic-serif" id="stat-total-pages">150+</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Pages of Research</div>
+        </div>
+        <div class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 academic-serif" id="stat-years-span">2018 - 2021</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Publication Years</div>
+        </div>
+        <div class="bg-slate-900/60 backdrop-blur-sm border border-slate-800 p-4 rounded-xl">
+          <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 academic-serif" id="stat-categories-count">7</div>
+          <div class="text-xs text-slate-400 font-medium uppercase tracking-wider mt-1">Research Domains</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLD ACCENT DIVIDER -->
+  <div class="gold-line"></div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+    <!-- SESSION STATUS BANNER -->
+    <div id="session-status-banner" class="session-status-banner rounded-xl p-4 mb-8 shadow-sm flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="flex items-start space-x-3">
+        <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 mt-0.5">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        </div>
+        <div class="text-xs sm:text-sm text-slate-700 leading-relaxed" id="session-status-text">
+          <span class="font-bold text-blue-900">Open Scholarly Access:</span>
+          All 8 research papers are free to read online. Downloads are limited to <strong>1 article per session</strong> with mandatory citation agreement.
+        </div>
+      </div>
+
+      <!-- Reset Session Button (Admin/Test) -->
+      <button id="btn-reset-session" class="hidden shrink-0 px-3 py-1.5 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-xs font-semibold transition shadow-sm flex items-center space-x-1">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        <span>Reset Session Quota</span>
+      </button>
+    </div>
+
+    <!-- ARTICLES CATALOG SECTION -->
+    <section id="articles-section" class="mb-14">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-widest block mb-1">Curated Research Repository</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 academic-serif">
+            Published Articles Catalog
+          </h2>
+        </div>
+        <div class="text-xs text-slate-500 font-medium" id="results-count">
+          Showing 8 of 8 articles
+        </div>
+      </div>
+
+      <!-- FILTER & SEARCH TOOLBAR -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-4 sm:p-5 shadow-sm mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+
+          <!-- Search Input -->
+          <div class="lg:col-span-5 relative">
+            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+            <input type="text" id="search-input" placeholder="Search by title, keyword, author, or journal..." class="w-full pl-10 pr-10 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition">
+            <button id="clear-search-btn" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 text-xs">
+              ✕
+            </button>
+          </div>
+
+          <!-- Year Filter -->
+          <div class="lg:col-span-3">
+            <select id="year-filter-select" class="w-full py-2.5 px-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition">
+              <option value="all">All Publication Years</option>
+              <option value="2021">Year 2021 (Kosala-XII)</option>
+              <option value="2020">Year 2020 (Kosala-XI)</option>
+              <option value="2019">Year 2019 (ICON, Human & Heritage, Arnava)</option>
+              <option value="2018">Year 2018 (Arnava, Heritage)</option>
+            </select>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="lg:col-span-2">
+            <select id="sort-select" class="w-full py-2.5 px-3 bg-slate-50 border border-slate-200 rounded-xl text-xs font-medium text-slate-700 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:bg-white transition">
+              <option value="year-desc">Newest First</option>
+              <option value="year-asc">Oldest First</option>
+              <option value="title-asc">Title (A - Z)</option>
+              <option value="pages-desc">Most Pages</option>
+            </select>
+          </div>
+
+          <!-- View Mode Toggles -->
+          <div class="lg:col-span-2 flex items-center justify-end space-x-1">
+            <button id="grid-view-btn" class="p-2 rounded-lg bg-slate-200 text-slate-900 hover:bg-slate-300 transition" title="Grid View">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+            </button>
+            <button id="list-view-btn" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 transition" title="List View">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- CATEGORY PILLS BAR -->
+        <div class="flex flex-wrap items-center gap-1.5 mt-4 pt-3 border-t border-slate-100">
+          <span class="text-xs font-semibold text-slate-500 mr-2">Filter Category:</span>
+          <button class="category-filter-btn active px-3 py-1 rounded-full text-xs font-medium bg-slate-900 text-white transition" data-category="all">
+            All Domains (8)
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Architecture & Brick Technology">
+            Architecture & Brick
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Iconography & Religious Studies">
+            Iconography & Art (2)
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Megalithic & Iron Age Studies">
+            Megalithic & Metallurgy
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Early Historic & Trade Networks">
+            Trade & Early Historic
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Archaeoastronomy & Ancient Science">
+            Archaeoastronomy
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Heritage Conservation & Field Survey">
+            Heritage Conservation
+          </button>
+          <button class="category-filter-btn px-3 py-1 rounded-full text-xs font-medium bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 transition" data-category="Prehistory & Lithic Archaeology">
+            Prehistory & Lithics
+          </button>
+        </div>
+      </div>
+
+      <!-- DYNAMIC ARTICLES CONTAINER -->
+      <div id="articles-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Injected via app.js -->
+      </div>
+
+      <!-- Empty State -->
+      <div id="empty-state" class="hidden text-center py-16 bg-white rounded-2xl border border-slate-200 p-8">
+        <svg class="w-12 h-12 text-slate-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <h3 class="text-lg font-bold text-slate-700 mb-1">No research articles found</h3>
+        <p class="text-sm text-slate-500 mb-4">Try adjusting your search keywords or clearing your category filters.</p>
+        <button onclick="document.getElementById('clear-search-btn').click();" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-medium">
+          Reset All Filters
+        </button>
+      </div>
+    </section>
+
+    <!-- MASTER CITATIONS GUIDE SECTION -->
+    <section id="citations-section" class="mb-14 pt-8 border-t border-slate-200">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+        <div>
+          <span class="text-xs font-bold text-amber-700 uppercase tracking-widest block mb-1">Official Reference Document</span>
+          <h2 class="text-2xl sm:text-3xl font-bold text-slate-900 academic-serif">
+            Master Citations & Attribution Guide
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">
+            Exact citation references compiled from official publication document (<code class="bg-slate-100 px-1 py-0.5 rounded text-amber-800">Citations.docx</code>).
+          </p>
+        </div>
+        <div class="flex items-center space-x-2 shrink-0">
+          <button onclick="exportAllBibtex()" class="px-3.5 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-semibold shadow-sm transition flex items-center space-x-1.5">
+            <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Export All (BibTeX)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- MASTER CITATIONS LIST CONTAINER -->
+      <div id="master-citations-list" class="space-y-4">
+        <!-- Injected via app.js -->
+      </div>
+    </section>
+
+    <!-- ABOUT THE SCHOLAR & RESEARCH FOCUS -->
+    <section id="author-section" class="mb-14 pt-8 border-t border-slate-200">
+      <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-6 sm:p-10 text-white shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-semibold mb-3 border border-amber-500/30">
+              <span>Scholar Profile</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold academic-serif mb-2 text-white">
+              K. S. Chandra
+            </h2>
+            <p class="text-sm font-medium text-amber-400 mb-4">
+              UGC NET • Contributory Lecturer • Department of Ancient Indian History, Culture & Archaeology (AIHC&A), Rashtrasant Tukadoji Maharaj (RTM) Nagpur University
+            </p>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+              K.S. Chandra's archaeological research spans over two decades of field investigations, excavations,
+              and material culture analyses across Eastern Maharashtra (Vidarbha) and Central India. His scholarly contributions
+              bridge prehistory to medieval art history, with pioneering works on Nagpur's in-situ Paleolithic horizons,
+              metallurgical typologies of Iron Age Megalithic circles (Naikund, Mahurjhari), Vakataka-era brick architecture (Mansar, Mandhal),
+              canonical iconography (Lajjā Gaurī, Vishnu), and archaeoastronomical records of historical celestial events.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 text-xs text-slate-300">
+              <div class="flex items-center space-x-1">
+                <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                <span>kschandra6@gmail.com</span>
+              </div>
+              <div class="flex items-center space-x-1">
+                <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                <span>RTM Nagpur University, Nagpur, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+          <div class="lg:col-span-4 bg-slate-950/60 p-6 rounded-2xl border border-slate-700/60">
+            <h4 class="text-xs font-bold text-amber-400 uppercase tracking-wider mb-3">Key Research Frontiers</h4>
+            <ul class="space-y-2 text-xs text-slate-300">
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2 font-bold">•</span>
+                <span>Lithic Technology & Urban Paleolithic Sites of Nagpur</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2 font-bold">•</span>
+                <span>Vidarbha Megalithic Metallurgy & Equine Material Culture</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2 font-bold">•</span>
+                <span>Vakataka Brick Architecture & Construction Bonds</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2 font-bold">•</span>
+                <span>Deccan Early Historic Trade (Bhokardan & Paunar)</span>
+              </li>
+              <li class="flex items-start">
+                <span class="text-amber-400 mr-2 font-bold">•</span>
+                <span>Indian Archaeoastronomy & Supernovae History</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD POLICY & FAIR CITATION SECTION -->
+    <section id="policy-section" class="mb-14 pt-8 border-t border-slate-200">
+      <div class="bg-amber-50/70 border border-amber-200 rounded-2xl p-6 sm:p-8">
+        <div class="flex items-start space-x-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-600 text-white flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">
+              Academic Open Access & Download Fair-Use Policy
+            </h3>
+            <p class="text-xs sm:text-sm text-slate-700 leading-relaxed mb-3">
+              To encourage direct engagement and ethical scholarship while honoring publisher copyrights,
+              this repository applies a <strong>one article download per session</strong> restriction:
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs text-slate-700">
+              <div class="bg-white p-3 rounded-lg border border-amber-100 flex items-start space-x-2">
+                <svg class="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span><strong>Unlimited Online Reading:</strong> All 8 papers can be read in full resolution online without restriction.</span>
+              </div>
+              <div class="bg-white p-3 rounded-lg border border-amber-100 flex items-start space-x-2">
+                <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                <span><strong>Mandatory Citation Agreement:</strong> Downloading an article requires acknowledging and agreeing to properly cite the publication.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="flex items-center space-x-2 mb-2">
+          <span class="w-3 h-3 rounded bg-amber-500"></span>
+          <span class="text-white font-bold text-base academic-serif">K.S. Chandra Research Archive</span>
+        </div>
+        <p class="text-xs text-slate-500">
+          Department of Ancient Indian History, Culture & Archaeology, RTM Nagpur University.
+        </p>
+      </div>
+
+      <!-- Prominent Required Credit -->
+      <div class="text-center md:text-right">
+        <div class="text-sm font-bold text-amber-400 tracking-wide mb-1">
+          Created and Hosted by K.S.Chandra 2026.
+        </div>
+        <div class="text-xs text-slate-500">
+          All Rights Reserved. Original copyrights belong to respective journals & editors.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. FULLSCREEN PDF READER MODAL -->
+  <div id="reader-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-2 sm:p-4">
+    <div class="modal-content-box bg-white w-full h-[96vh] max-w-7xl rounded-2xl shadow-2xl flex flex-col overflow-hidden border border-slate-300">
+
+      <!-- Reader Top Toolbar -->
+      <div class="bg-slate-900 text-white px-4 py-3 flex items-center justify-between border-b border-slate-800 shrink-0">
+        <div class="flex items-center space-x-3 truncate mr-4">
+          <div class="w-8 h-8 rounded bg-amber-600 flex items-center justify-center text-white shrink-0">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <div class="truncate">
+            <h3 id="reader-title" class="text-sm font-bold truncate text-white leading-tight">Article Title</h3>
+            <p id="reader-meta" class="text-[11px] text-slate-400 truncate leading-tight">Authors • Journal (Year)</p>
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="flex items-center space-x-2 shrink-0">
+          <button onclick="toggleReaderSidebar()" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg text-xs font-medium transition flex items-center space-x-1" title="Toggle article abstract & highlights sidebar">
+            <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"/></svg>
+            <span class="hidden sm:inline">Details</span>
+          </button>
+          <a id="btn-reader-newtab" href="#" target="_blank" class="px-2.5 py-1.5 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-lg text-xs font-medium transition flex items-center space-x-1" title="Open PDF directly in new tab">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            <span class="hidden sm:inline">New Tab</span>
+          </a>
+          <button onclick="closeModal('reader-modal')" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition" title="Close Reader">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Reader Body (Split View) -->
+      <div class="flex-1 flex overflow-hidden">
+        <!-- PDF Viewer Iframe -->
+        <div class="flex-1 bg-slate-100 relative h-full">
+          <iframe id="pdf-iframe" src="about:blank" class="w-full h-full border-0" title="PDF Document Viewer"></iframe>
+        </div>
+
+        <!-- Sidebar (Article metadata & Abstract) -->
+        <div id="reader-sidebar" class="w-80 md:w-96 bg-white border-l border-slate-200 flex flex-col h-full overflow-y-auto p-5 text-slate-800 shadow-lg shrink-0">
+          <div class="mb-4">
+            <span class="text-[11px] font-bold text-amber-700 uppercase tracking-widest block mb-1">Abstract & Summary</span>
+            <p id="reader-abstract" class="text-xs text-slate-600 leading-relaxed bg-slate-50 p-3 rounded-lg border border-slate-100">
+              Abstract text...
+            </p>
+          </div>
+
+          <div class="mb-4">
+            <span class="text-[11px] font-bold text-slate-900 uppercase tracking-widest block mb-2">Key Highlights</span>
+            <ul id="reader-highlights" class="space-y-1">
+              <!-- Injected -->
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <span class="text-[11px] font-bold text-slate-900 uppercase tracking-widest block mb-1.5">Keywords</span>
+            <div id="reader-keywords" class="flex flex-wrap gap-1">
+              <!-- Injected -->
+            </div>
+          </div>
+
+          <div class="mb-4 text-xs text-slate-600 space-y-1 border-t border-slate-100 pt-3">
+            <div><span class="font-bold text-slate-800">Geographic Focus:</span> <span id="reader-region"></span></div>
+            <div><span class="font-bold text-slate-800">Chronology:</span> <span id="reader-period"></span></div>
+          </div>
+
+          <div class="mt-auto pt-4 border-t border-slate-200">
+            <span class="text-[11px] font-bold text-slate-900 uppercase tracking-widest block mb-1">Official Citation</span>
+            <div id="reader-citation" class="text-[11px] font-mono bg-slate-50 p-2.5 rounded border border-slate-200 select-all mb-3 text-slate-700 leading-normal">
+            </div>
+            <div id="reader-download-btn-container">
+              <!-- Injected download button -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 2. CITATION & AGREEMENT MODAL -->
+  <div id="citation-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4">
+    <div class="modal-content-box bg-white w-full max-w-2xl rounded-2xl shadow-2xl overflow-hidden border border-slate-200 flex flex-col">
+
+      <!-- Modal Header -->
+      <div class="bg-slate-900 text-white p-5 border-b border-slate-800 flex items-start justify-between">
+        <div>
+          <span class="text-xs font-bold text-amber-400 uppercase tracking-wider block mb-1">Research Attribution</span>
+          <h3 id="citation-modal-title" class="text-lg font-bold text-white leading-snug">
+            Article Title
+          </h3>
+          <p id="citation-modal-subtitle" class="text-xs text-slate-400 mt-1">
+            Authors • Journal
+          </p>
+        </div>
+        <button onclick="closeModal('citation-modal')" class="text-slate-400 hover:text-white transition p-1">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="p-5 sm:p-6 space-y-4">
+
+        <!-- Citation Format Tabs -->
+        <div>
+          <div class="flex items-center justify-between border-b border-slate-200 mb-3">
+            <div class="flex space-x-4 text-xs font-medium">
+              <button class="citation-tab-btn py-2 border-b-2 border-amber-600 text-amber-800 font-semibold" data-format="original">
+                Standard (Official)
+              </button>
+              <button class="citation-tab-btn py-2 border-b-2 border-transparent text-slate-500 hover:text-slate-700" data-format="apa">
+                APA 7th
+              </button>
+              <button class="citation-tab-btn py-2 border-b-2 border-transparent text-slate-500 hover:text-slate-700" data-format="chicago">
+                Chicago
+              </button>
+              <button class="citation-tab-btn py-2 border-b-2 border-transparent text-slate-500 hover:text-slate-700" data-format="bibtex">
+                BibTeX
+              </button>
+            </div>
+            <button onclick="copyCitation()" class="px-2.5 py-1 text-xs font-medium bg-slate-100 hover:bg-slate-200 text-slate-700 rounded transition flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+              <span>Copy</span>
+            </button>
+          </div>
+
+          <!-- Citation Output Boxes -->
+          <div id="citation-box-original" class="citation-content-box">
+            <p id="citation-text-original" class="text-xs font-mono bg-slate-50 p-3.5 rounded-lg border border-slate-200 text-slate-800 leading-relaxed select-all">
+            </p>
+          </div>
+          <div id="citation-box-apa" class="citation-content-box hidden">
+            <p id="citation-text-apa" class="text-xs font-mono bg-slate-50 p-3.5 rounded-lg border border-slate-200 text-slate-800 leading-relaxed select-all">
+            </p>
+          </div>
+          <div id="citation-box-chicago" class="citation-content-box hidden">
+            <p id="citation-text-chicago" class="text-xs font-mono bg-slate-50 p-3.5 rounded-lg border border-slate-200 text-slate-800 leading-relaxed select-all">
+            </p>
+          </div>
+          <div id="citation-box-bibtex" class="citation-content-box hidden">
+            <pre id="citation-text-bibtex" class="text-xs font-mono bg-slate-900 text-amber-200 p-3.5 rounded-lg overflow-x-auto select-all leading-normal">
+            </pre>
+          </div>
+        </div>
+
+        <!-- Citation Agreement Section (Only when downloading) -->
+        <div id="citation-agreement-section" class="bg-amber-50 border border-amber-200 rounded-xl p-4 space-y-3">
+          <div class="flex items-start space-x-3">
+            <input type="checkbox" id="citation-agree-checkbox" class="mt-1 w-4 h-4 text-amber-600 rounded border-amber-300 focus:ring-amber-500 cursor-pointer">
+            <label for="citation-agree-checkbox" class="text-xs text-amber-950 leading-relaxed cursor-pointer select-none">
+              <strong class="font-bold">Citation & Attribution Commitment:</strong>
+              I solemnly agree to cite and acknowledge this research paper in any academic thesis, research article, publication, presentation, or derived work using the citation provided above.
+            </label>
+          </div>
+          <div class="text-[11px] text-amber-800/80 pl-7">
+            Note: In accordance with repository policy, downloading is limited to <strong>1 article per session</strong>.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="bg-slate-50 px-5 py-4 border-t border-slate-200 flex items-center justify-between">
+        <div class="text-[11px] text-slate-400">
+          Created and Hosted by K.S.Chandra 2026.
+        </div>
+        <div class="flex items-center space-x-2">
+          <button id="btn-citation-close" onclick="closeModal('citation-modal')" class="px-4 py-2 bg-slate-200 hover:bg-slate-300 text-slate-800 rounded-lg text-xs font-semibold transition">
+            Close
+          </button>
+          <button id="btn-confirm-download" disabled class="opacity-50 cursor-not-allowed px-5 py-2 bg-amber-700 hover:bg-amber-800 text-white rounded-lg text-xs font-bold transition flex items-center space-x-1.5 shadow-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+            <span>Agree & Download PDF</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 3. SESSION LIMIT EXCEEDED MODAL -->
+  <div id="session-limit-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div class="modal-content-box bg-white w-full max-w-lg rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+      <div class="bg-amber-700 text-white p-5 flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-amber-800 flex items-center justify-center shrink-0">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+        </div>
+        <div>
+          <h3 class="text-base font-bold">Session Download Limit Reached</h3>
+          <p class="text-xs text-amber-200">Repository Policy: One Article Per Session</p>
+        </div>
+      </div>
+
+      <div class="p-6 space-y-4 text-xs sm:text-sm text-slate-700">
+        <p class="leading-relaxed">
+          You have already downloaded an article during this browsing session:
+        </p>
+        <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg text-amber-950 font-semibold" id="limit-modal-downloaded-title">
+          "Article Title"
+        </div>
+        <p class="leading-relaxed">
+          Under our scholarly open-access fair-use policy, direct PDF downloads are restricted to <strong>one article per session</strong>.
+          However, you can <strong>read all articles in full resolution online anytime</strong> without any restriction!
+        </p>
+
+        <div class="pt-3 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-end gap-2">
+          <button id="btn-modal-reset-session" class="w-full sm:w-auto px-4 py-2 bg-slate-100 hover:bg-slate-200 text-slate-700 rounded-lg text-xs font-semibold transition" title="Reset session for evaluation/testing">
+            Reset Session (Test Mode)
+          </button>
+          <button id="btn-read-attempted" class="w-full sm:w-auto px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-semibold transition flex items-center justify-center space-x-1">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+            <span>Read Online Instead</span>
+          </button>
+          <button onclick="closeModal('session-limit-modal')" class="w-full sm:w-auto px-4 py-2 bg-amber-700 hover:bg-amber-800 text-white rounded-lg text-xs font-semibold transition">
+            Got It
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 bg-slate-900 text-white px-4 py-3 rounded-xl shadow-2xl flex items-center space-x-3 border border-slate-700">
+    <svg id="toast-icon" class="w-5 h-5 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+    <span id="toast-text" class="text-xs font-medium">Notification message</span>
+  </div>
+
+  <!-- JavaScript Files -->
+  <script src="assets/js/articles-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
