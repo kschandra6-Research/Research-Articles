@@ -1,10 +1,15 @@
 import json
+import os
+
+base_dir = os.path.dirname(os.path.abspath(__file__))
 
 articles = [
     {
         "id": "brick-structures",
         "title": "Brick structures from Eastern Vidarbha during 5th to 8th Century CE",
         "authors": ["K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "UGC NET, Contributory Lecturer, Dept of Ancient Indian History Culture & Archaeology, RTM Nagpur University, Nagpur",
         "journal": "Kosala-XII",
         "publisher": "Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur",
@@ -34,12 +39,14 @@ articles = [
         "citation_original": "“Brick structures from Eastern Vidarbha during 5th to 8th Century CE” - Kosala-XII, Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur, 2021: 197-206, ISSN 2229-4546.",
         "citation_apa": "Chandra, K. S. (2021). Brick structures from Eastern Vidarbha during 5th to 8th Century CE. Kosala-XII, 197–206. ISSN: 2229-4546.",
         "citation_chicago": "Chandra, K. S. \"Brick structures from Eastern Vidarbha during 5th to 8th Century CE.\" Kosala-XII (2021): 197-206.",
-        "citation_bibtex": "@article{chandra2021brick,\n  author = {Chandra, K. S.},\n  title = {Brick structures from Eastern Vidarbha during 5th to 8th Century CE},\n  journal = {Kosala},\n  volume = {XII},\n  pages = {197--206},\n  year = {2021},\n  publisher = {Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur},\n  issn = {2229-4546}\n}"
+        "citation_bibtex": "@article{chandra2021brick,\n  author = {Chandra, K. S.},\n  title = {Brick structures from Eastern Vidarbha during 5th to 8th Century CE},\n  journal = {Kosala},\n  volume = {XII},\n  pages = {197--206},\n  year = {2021},\n  publisher = {Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur},\n  issn = {2229-4546},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "lajja-gauri",
         "title": "A Fragmentary Lajjā Gaurī Image from Brahmapuri, Dist. Chandrapur",
         "authors": ["Dr. Chandrashekhar Gupta", "K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Former Professor & Head, Dept. of AIHC&A, RTM Nagpur University & Contributory Lecturer, Dept of AIHC&A, RTM Nagpur University",
         "journal": "Kosala-XI",
         "publisher": "Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur",
@@ -69,12 +76,14 @@ articles = [
         "citation_original": "‘A Fragmentary Lajjā Gaurī Image from Brahmapuri, Dist. Chandrapur’ – Co Authored, Kosala-XI, Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur, 2020:134-143, ISSN: 2229-4546.",
         "citation_apa": "Gupta, C., & Chandra, K. S. (2020). A Fragmentary Lajjā Gaurī Image from Brahmapuri, Dist. Chandrapur. Kosala-XI, 134–143. ISSN: 2229-4546.",
         "citation_chicago": "Gupta, Chandrashekhar, and K. S. Chandra. \"A Fragmentary Lajjā Gaurī Image from Brahmapuri, Dist. Chandrapur.\" Kosala-XI (2020): 134-143.",
-        "citation_bibtex": "@article{gupta_chandra_2020_lajja_gauri,\n  author = {Gupta, Chandrashekhar and Chandra, K. S.},\n  title = {A Fragmentary Lajjā Gaurī Image from Brahmapuri, Dist. Chandrapur},\n  journal = {Kosala},\n  volume = {XI},\n  pages = {134--143},\n  year = {2020},\n  publisher = {Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur},\n  issn = {2229-4546}\n}"
+        "citation_bibtex": "@article{gupta_chandra_2020_lajja_gauri,\n  author = {Gupta, Chandrashekhar and Chandra, K. S.},\n  title = {A Fragmentary Lajjā Gaurī Image from Brahmapuri, Dist. Chandrapur},\n  journal = {Kosala},\n  volume = {XI},\n  pages = {134--143},\n  year = {2020},\n  publisher = {Directorate of Culture and Archaeology, Government of Chhattisgarh, Raipur},\n  issn = {2229-4546},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "megalithic-culture",
         "title": "Revisiting Vidarbha Megalithic Material Culture – Study of some Tools and Implements found from various Excavations in Vidarbha",
         "authors": ["K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Contributory Lecturer, Department of Ancient Indian History, Culture & Archaeology, RTM Nagpur University, Nagpur",
         "journal": "ICON Journal of Archaeology and Culture",
         "publisher": "Wakankar Rock Art and Heritage Welfare Society, Bhopal in association with B.R. Publishing Corporation, Delhi",
@@ -104,12 +113,14 @@ articles = [
         "citation_original": "‘Revisiting Vidarbha Megalithic Material Culture – Study of some Tools and Implements found from various Excavations in Vidarbha’, ICON Journal of Archaeology and Culture, (An International Referred Research Journal) in honor of Prof. J.N. Pal, Wakankar Rock Art and Heritage Welfare Society, Bhopal in association with B.R. Publishing Corporation, Delhi, 2019: Vol-6, 191-206, ISSN:2347-7032.",
         "citation_apa": "Chandra, K. S. (2019). Revisiting Vidarbha Megalithic Material Culture – Study of some Tools and Implements found from various Excavations in Vidarbha. ICON Journal of Archaeology and Culture, 6, 191–206. ISSN: 2347-7032.",
         "citation_chicago": "Chandra, K. S. \"Revisiting Vidarbha Megalithic Material Culture – Study of some Tools and Implements found from various Excavations in Vidarbha.\" ICON Journal of Archaeology and Culture 6 (2019): 191-206.",
-        "citation_bibtex": "@article{chandra2019revisiting,\n  author = {Chandra, K. S.},\n  title = {Revisiting Vidarbha Megalithic Material Culture -- Study of some Tools and Implements found from various Excavations in Vidarbha},\n  journal = {ICON Journal of Archaeology and Culture},\n  volume = {6},\n  pages = {191--206},\n  year = {2019},\n  issn = {2347-7032}\n}"
+        "citation_bibtex": "@article{chandra2019revisiting,\n  author = {Chandra, K. S.},\n  title = {Revisiting Vidarbha Megalithic Material Culture -- Study of some Tools and Implements found from various Excavations in Vidarbha},\n  journal = {ICON Journal of Archaeology and Culture},\n  volume = {6},\n  pages = {191--206},\n  year = {2019},\n  issn = {2347-7032},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "bhokardan-paunar",
         "title": "A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar",
         "authors": ["K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Dept of Ancient Indian History, Culture & Archaeology, RTM Nagpur University",
         "journal": "Human and Heritage: An Archaeological Spectrum of Asiatic Countries (Felicitation to Prof Ajith Kumar)",
         "publisher": "New Bharatiya Book Corporation, Delhi / University of Kerala",
@@ -136,15 +147,17 @@ articles = [
         "page_count": 28,
         "thumbnail": "assets/thumbnails/bhokardan-paunar.jpg",
         "thumbnail_sm": "assets/thumbnails/bhokardan-paunar_sm.jpg",
-        "citation_original": "‘A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar’, Human and Heritage: An Archaeological Spectrum of Asiatic Countries (Felicitation to Prof Ajith Kumar, Eds. Rajesh S V, Abhayan G S, Preeta Nayar and Ehsan Rahmath Elahi) (2 Vols) Volume No-I, Kerala University, 2019: 397-403, ISBN: 9788183153614.",
+        "citation_original": "‘A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar’, Human and Heritage: An Archaeological Spectrum of Asiatic Countries (Felicitation to Prof Ajith Kumar, Eds. Rajesh S V, Abhayan G S, Preeta Nayar and Ehsan Rahmath Elahi) (2 Vols) Volume No-I, Kerala University, 2019: 397-403, ISBN: 9788183153614.",
         "citation_apa": "Chandra, K. S. (2019). A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar. In S. V. Rajesh, G. S. Abhayan, P. Nayar, & E. R. Elahi (Eds.), Human and Heritage: An Archaeological Spectrum of Asiatic Countries (Vol. 1, pp. 397–403). New Bharatiya Book Corporation. ISBN: 978-81-8315-361-4.",
         "citation_chicago": "Chandra, K. S. \"A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar.\" In Human and Heritage: An Archaeological Spectrum of Asiatic Countries, edited by Rajesh S. V. et al., 1:397-403. Delhi: New Bharatiya Book Corporation, 2019.",
-        "citation_bibtex": "@incollection{chandra2019bhokardan,\n  author = {Chandra, K. S.},\n  title = {A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar},\n  booktitle = {Human and Heritage: An Archaeological Spectrum of Asiatic Countries},\n  editor = {Rajesh, S. V. and Abhayan, G. S. and Nayar, Preeta and Elahi, Ehsan Rahmath},\n  volume = {I},\n  pages = {397--403},\n  year = {2019},\n  publisher = {New Bharatiya Book Corporation, Delhi},\n  isbn = {978-81-8315-361-4}\n}"
+        "citation_bibtex": "@incollection{chandra2019bhokardan,\n  author = {Chandra, K. S.},\n  title = {A Comparative Study of Material Culture found from Excavations at Bhokardan and Paunar},\n  booktitle = {Human and Heritage: An Archaeological Spectrum of Asiatic Countries},\n  editor = {Rajesh, S. V. and Abhayan, G. S. and Nayar, Preeta and Elahi, Ehsan Rahmath},\n  volume = {I},\n  pages = {397--403},\n  year = {2019},\n  publisher = {New Bharatiya Book Corporation, Delhi},\n  isbn = {978-81-8315-361-4},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "celestial-events",
         "title": "A Study of Some Celestial Events Missed by Ancient Indians",
         "authors": ["K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Lecturer, Dept. of AIHC & Archaeology, RTM Nagpur University, Nagpur",
         "journal": "Arnava",
         "publisher": "Arnava Shodh Sanstha",
@@ -174,12 +187,14 @@ articles = [
         "citation_original": "‘A Study of Some Celestial Events Missed by Ancient Indians’, Aranava (Referred Peer Reviewed Journal) Vol-VIII, No.1, 2019: 73-92, ISSN 2320-0103.",
         "citation_apa": "Chandra, K. S. (2019). A Study of Some Celestial Events Missed by Ancient Indians. Arnava, 8(1), 73–92. ISSN: 2320-0103.",
         "citation_chicago": "Chandra, K. S. \"A Study of Some Celestial Events Missed by Ancient Indians.\" Arnava 8, no. 1 (2019): 73-92.",
-        "citation_bibtex": "@article{chandra2019celestial,\n  author = {Chandra, K. S.},\n  title = {A Study of Some Celestial Events Missed by Ancient Indians},\n  journal = {Arnava},\n  volume = {VIII},\n  number = {1},\n  pages = {73--92},\n  year = {2019},\n  issn = {2320-0103}\n}"
+        "citation_bibtex": "@article{chandra2019celestial,\n  author = {Chandra, K. S.},\n  title = {A Study of Some Celestial Events Missed by Ancient Indians},\n  journal = {Arnava},\n  volume = {VIII},\n  number = {1},\n  pages = {73--92},\n  year = {2019},\n  issn = {2320-0103},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "historic-sites",
         "title": "Some Historic Sites in Nagpur District- Present Status",
         "authors": ["K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Lecturer, Dept. of AIHC & Archaeology, RTM Nagpur University, Nagpur",
         "journal": "Arnava",
         "publisher": "Arnava Shodh Sanstha",
@@ -209,12 +224,14 @@ articles = [
         "citation_original": "‘Some Historic Sites in Nagpur District- Present Status’, Aranava (Referred Peer Reviewed Journal) Vol-VII, No.2, 2018: 1-17, ISSN 2320-0103.",
         "citation_apa": "Chandra, K. S. (2018). Some Historic Sites in Nagpur District- Present Status. Arnava, 7(2), 1–17. ISSN: 2320-0103.",
         "citation_chicago": "Chandra, K. S. \"Some Historic Sites in Nagpur District- Present Status.\" Arnava 7, no. 2 (2018): 1-17.",
-        "citation_bibtex": "@article{chandra2018historicsites,\n  author = {Chandra, K. S.},\n  title = {Some Historic Sites in Nagpur District- Present Status},\n  journal = {Arnava},\n  volume = {VII},\n  number = {2},\n  pages = {1--17},\n  year = {2018},\n  issn = {2320-0103}\n}"
+        "citation_bibtex": "@article{chandra2018historicsites,\n  author = {Chandra, K. S.},\n  title = {Some Historic Sites in Nagpur District- Present Status},\n  journal = {Arnava},\n  volume = {VII},\n  number = {2},\n  pages = {1--17},\n  year = {2018},\n  issn = {2320-0103},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "vishnu-sculpture",
         "title": "A Vishnu Sculpture from Kelzar, District Wardha, Maharashtra",
         "authors": ["K.S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Department of Ancient Indian History, Culture and Archaeology, R.T.M. Nagpur University, Nagpur",
         "journal": "Heritage: Journal of Multidisciplinary Studies in Archaeology",
         "publisher": "University of Kerala",
@@ -244,12 +261,14 @@ articles = [
         "citation_original": "‘A Vishnu Sculpture from Kelzar, District Wardha, Maharashtra’. –Heritage Journal of Multidisciplinary Studies in Archaeology, Vol.6, Kerala University, 2018: 813-819, ISSN 2347-5463.",
         "citation_apa": "Chandra, K. S. (2018). A Vishnu Sculpture from Kelzar, District Wardha, Maharashtra. Heritage: Journal of Multidisciplinary Studies in Archaeology, 6, 813–819. ISSN: 2347-5463.",
         "citation_chicago": "Chandra, K. S. \"A Vishnu Sculpture from Kelzar, District Wardha, Maharashtra.\" Heritage: Journal of Multidisciplinary Studies in Archaeology 6 (2018): 813-819.",
-        "citation_bibtex": "@article{chandra2018vishnu,\n  author = {Chandra, K. S.},\n  title = {A Vishnu Sculpture from Kelzar, District Wardha, Maharashtra},\n  journal = {Heritage: Journal of Multidisciplinary Studies in Archaeology},\n  volume = {6},\n  pages = {813--819},\n  year = {2018},\n  issn = {2347-5463}\n}"
+        "citation_bibtex": "@article{chandra2018vishnu,\n  author = {Chandra, K. S.},\n  title = {A Vishnu Sculpture from Kelzar, District Wardha, Maharashtra},\n  journal = {Heritage: Journal of Multidisciplinary Studies in Archaeology},\n  volume = {6},\n  pages = {813--819},\n  year = {2018},\n  issn = {2347-5463},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     },
     {
         "id": "paleolithic-tools",
         "title": "Paleolithic Tools in Nagpur: Recent Discovery",
         "authors": ["K. S. Chandra"],
+        "author_orcid": "0000-0002-0976-2058",
+        "author_orcid_url": "https://orcid.org/0000-0002-0976-2058",
         "author_affiliation": "Lecturer, Dept. of AIHC & Archaeology, RTM Nagpur University, Nagpur",
         "journal": "Arnava",
         "publisher": "Arnava Shodh Sanstha",
@@ -279,20 +298,21 @@ articles = [
         "citation_original": "‘Paleolithic Tools in Nagpur: Recent Discovery’, Aranava (Referred Peer Reviewed Journal) Vol-VII, No.1, 2018: 1-17, ISSN 2320-0103.",
         "citation_apa": "Chandra, K. S. (2018). Paleolithic Tools in Nagpur: Recent Discovery. Arnava, 7(1), 1–17. ISSN: 2320-0103.",
         "citation_chicago": "Chandra, K. S. \"Paleolithic Tools in Nagpur: Recent Discovery.\" Arnava 7, no. 1 (2018): 1-17.",
-        "citation_bibtex": "@article{chandra2018paleolithic,\n  author = {Chandra, K. S.},\n  title = {Paleolithic Tools in Nagpur: Recent Discovery},\n  journal = {Arnava},\n  volume = {VII},\n  number = {1},\n  pages = {1--17},\n  year = {2018},\n  issn = {2320-0103}\n}"
+        "citation_bibtex": "@article{chandra2018paleolithic,\n  author = {Chandra, K. S.},\n  title = {Paleolithic Tools in Nagpur: Recent Discovery},\n  journal = {Arnava},\n  volume = {VII},\n  number = {1},\n  pages = {1--17},\n  year = {2018},\n  issn = {2320-0103},\n  note = {ORCID: https://orcid.org/0000-0002-0976-2058}\n}"
     }
 ]
 
-base_dir = r"C:\Users\DuDu-PC\.gemini\antigravity\scratch\academic-articles-dashboard"
-
 # Save citations.json
-with open(f"{base_dir}\\citations.json", "w", encoding="utf-8") as f:
+citations_json_path = os.path.join(base_dir, "citations.json")
+with open(citations_json_path, "w", encoding="utf-8") as f:
     json.dump(articles, f, indent=2, ensure_ascii=False)
 
 # Save articles-data.js
-with open(f"{base_dir}\\assets\\js\\articles-data.js", "w", encoding="utf-8") as f:
+articles_js_path = os.path.join(base_dir, "assets", "js", "articles-data.js")
+with open(articles_js_path, "w", encoding="utf-8") as f:
     f.write("// Academic Articles Dataset & Citations - K.S. Chandra Research Archive\n")
-    f.write("// Created and Hosted by K.S.Chandra 2026.\n\n")
+    f.write("// Created and Hosted by K.S.Chandra 2026.\n")
+    f.write("// ORCID: https://orcid.org/0000-0002-0976-2058\n\n")
     f.write("const ARTICLES_DATA = " + json.dumps(articles, indent=2, ensure_ascii=False) + ";\n")
 
-print("Generated citations.json and articles-data.js successfully!")
+print(f"Generated {citations_json_path} and {articles_js_path} successfully!")

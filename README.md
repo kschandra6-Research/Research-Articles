@@ -1,5 +1,9 @@
 # K.S. Chandra Research Archive & Interactive Web Dashboard
 
+[![ORCID](https://img.shields.io/badge/ORCID-0000--0002--0976--2058-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0000-0002-0976-2058)
+[![Research Papers](https://img.shields.io/badge/Published%20Papers-8-blue)](#%EF%B8%8F-repository-overview)
+[![Academic Reading](https://img.shields.io/badge/Open%20Reading-Unlimited-emerald)](#-key-dashboard-features)
+
 > **Created and Hosted by K.S.Chandra 2026.**
 
 An interactive, professional academic web dashboard designed for exploring, reading, citing, and downloading published research articles in Indian Archaeology, Art History, Megalithic Material Culture, Ancient Architecture, and Archaeoastronomy by **K.S. Chandra** (RTM Nagpur University).
@@ -83,5 +87,8 @@ This repository archives eight (8) landmark peer-reviewed research papers publis
 
 ## 🏷️ Credits & Legal
 **Created and Hosted by K.S.Chandra 2026.**
+- **Author ORCID Record**: [0000-0002-0976-2058](https://orcid.org/0000-0002-0976-2058)
+- **Affiliation**: Department of Ancient Indian History, Culture & Archaeology (AIHC&A), Rashtrasant Tukadoji Maharaj (RTM) Nagpur University
+- **Contact Email**: kschandra6@gmail.com
 
 *All rights reserved. Copyright of original published articles belongs to their respective academic journals, societies, and book publishers. Articles are hosted for scholarly research, educational evaluation, and fair-use study.*
